@@ -18,6 +18,11 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
 # 3) 필수 패키지 설치
 pip install -r requirements.txt
+```
+
+
+
+
 
 ## deep learning
 
