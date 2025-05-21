@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 
 
-## deep learning
+## 파일 및 핵심내용, 주요라이브러리 
 
 
 | 파일 | 핵심 내용 | 주요 라이브러리 |
