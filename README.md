@@ -134,3 +134,32 @@ pip install -r requirements.txt
 | `tokenizer_config.json` | 토크나이저 동작 방식에 대한 설정값 (lowercase 여부, special tokens 등)이 담긴 파일입니다. |
 
 ---
+
+### LLAMA 3.1 + RAG vs LLAMA 3.1 + Fine-tuning 비교 
+
+### 1. 실험 결과 비교
+- **LLAMA 3.1 + RAG**  
+- **LLAMA 3.1 + Fine-tuning**  
+→ 두 방식 간 성능 차이 없음  
+→ **RAG**가 더 효율적
+
+---
+
+### 2. RAG 성능 향상 방안
+1. **Chain-of-Thought (CoT) 기반 프롬프트 엔지니어링**  
+   - 복잡한 추론 과정을 단계별로 유도하여 성능 개선  
+2. **테이블 처리 성능 보완**  
+   - 기본적으로 텍스트는 왼쪽→오른쪽으로,  
+     표(table)는 위→아래로 읽어야 하므로 처리 방식 차이로 성능 저하 발생  
+
+---
+
+### 3. 테이블 읽기 개선: `unstructured` 라이브러리
+- **적용 배경**  
+  - RAG에서 테이블 인식 및 파싱 정확도가 낮음  
+- **도입 효과**  
+  - `unstructured` 라이브러리 추가  
+  - 표 구조를 위→아래 흐름으로 정확히 파악  
+  - **테이블 처리 성능 대폭 향상**
+
+---
