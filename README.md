@@ -44,8 +44,14 @@ pip install -r requirements.txt
 | `8_벡터_데이터베이스_기반_RAG어플리케이션.ipynb` | 벡터 DB를 활용한 RAG(Retrieval-Augmented Generation) 구현 | `langchain`, `chromadb`, `openai` |
 | `9_PDF내용_기반_질의응답_애플리케이션.ipynb` | PDF 문서 기반 질의응답 시스템 구현 | `langchain`, `pypdf`, `openai` |
 | `10_LangChain을_이용한_SQL_Database분석.ipynb` | LangChain을 활용한 SQL 데이터베이스 분석 | `langchain`, `sqlalchemy`, `openai` |
+| `11_LangChain_tool_connect.ipynb` | LangChain의 Tool 연결 및 활용 방법 | `langchain`, `openai` |
+| `11_1_LangChain에서_Tool_Call과_Agent를_활용한_자동화_실습.ipynb` | LangChain Agent와 Tool을 활용한 자동화 워크플로우 구현 | `langchain`, `openai` |
+| `12_LangChain_Code_Writing_Moderation_Chain.ipynb` | 코드 생성 및 검증을 위한 LangChain 파이프라인 구현 | `langchain`, `openai` |
+| `12_2_LangGraph_기초.ipynb` | LangGraph를 활용한 복잡한 워크플로우 구현 | `langgraph`, `langchain`, `openai` |
 | `13_fine_tunning.ipynb` | 언어모델 파인튜닝 기초와 실습 | `transformers`, `datasets`, `torch` |
 | `14_llama2_파인튜닝.ipynb` | LLaMA2 모델 파인튜닝 실습 | `transformers`, `peft`, `torch` |
+| `15_llama3_파인튜닝_unsloth.ipynb` | Unsloth를 활용한 LLaMA3 모델 최적화 파인튜닝 | `unsloth`, `transformers`, `torch` |
+| `16_FineTuning_RAG비교.ipynb` | 파인튜닝과 RAG 방식의 성능 비교 분석 | `transformers`, `langchain`, `torch` |
 
 
 ##  🔎 RAG 기반 파인튜닝 과정 (Retrieval-Augmented Generation)
@@ -163,3 +169,33 @@ pip install -r requirements.txt
   - **테이블 처리 성능 대폭 향상**
 
 ---
+
+### 📚 주요 파일별 핵심 기능
+
+#### 1. LangChain 관련 파일들
+- **`11_1_LangChain에서_Tool_Call과_Agent를_활용한_자동화_실습.ipynb`**
+  - Tool과 Agent를 활용한 복잡한 작업 자동화
+  - 다양한 도구 연동 및 워크플로우 구성
+  - 에러 처리 및 재시도 메커니즘 구현
+
+- **`12_2_LangGraph_기초.ipynb`**
+  - 복잡한 워크플로우의 시각화 및 관리
+  - 상태 기반 워크플로우 구현
+  - 병렬 처리 및 조건부 실행 구현
+
+#### 2. 파인튜닝 관련 파일들
+- **`15_llama3_파인튜닝_unsloth.ipynb`**
+  - Unsloth를 활용한 메모리 최적화
+  - 빠른 학습 속도와 효율적인 리소스 사용
+  - 양자화 및 최적화 기법 적용
+
+- **`16_FineTuning_RAG비교.ipynb`**
+  - 파인튜닝과 RAG 방식의 성능 비교
+  - 다양한 평가 메트릭 분석
+  - 하이브리드 접근 방식 실험
+
+#### 3. 코드 생성 및 검증
+- **`12_LangChain_Code_Writing_Moderation_Chain.ipynb`**
+  - 코드 생성 및 자동 검증 파이프라인
+  - 보안 및 품질 검사 자동화
+  - 코드 리팩토링 및 최적화
